@@ -23,8 +23,16 @@ or in form of a Python3 code:<br/>
 <img src="resources_img/authentication-pycharm.png" width="600">
 
 ## 1. Creating a new organisation using [apiary.io](https://snyk.docs.apiary.io/#reference/organizations/create-organization/create-a-new-organization) 
-- [ ] Go to [apiary.io](https://snyk.docs.apiary.io/#reference/organizations/create-organization/create-a-new-organization) and click on "Switch to console"
-<img src="resources_img/switch-to-console.png" width="600">
+- [ ] Go to [apiary.io](https://snyk.docs.apiary.io/#reference/organizations/create-organization/create-a-new-organization) and click on "Switch to console" 
+<img src="resources_img/switch-to-console.png" width="600"><br/>
+
+- [ ] Now we need to configure the Header-first. For now, we only change the "Authorization" field by adding a valid token to it (replace the text **API_KEY** to a valid **Group-level-token**<br/>   
+<img src="resources_img/authentication-apiary-auth.png" width="600">
+
+- [ ] Change the parameters in the Body-section: the name of your new organisation in the Snyk WebUI, your GroupID in the Snyk WebUI, and optionally a organisationID from the Snyk WebUI where we can copy the various integrations-settings.
+
+- [ ] Click on the green button "Call Resources" <br/>
+<img src="resources_img/authentication-apiary-auth-body.png" width="600">
 
 ## 2. Creating a new organisation using the Snyk API
 Let's create a new organisation in your Snyk Group using the Snyk API.
