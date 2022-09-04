@@ -2,7 +2,7 @@ import httpx
 import json
 import logging
 
-# Log-level can be eg. "INFO", "DEBUG", "CRITICAL", "ERROR", "FATAL"...
+# Log-level can be eg. "INFO", "DEBUG", "CRITICAL", "ERROR", "FATAL"... 
 logging.basicConfig(level=logging.DEBUG)
 
 
