@@ -92,7 +92,7 @@ for org in group_orgs:
 
 ## 4. Add a new integration to the org
 ---
-:genie: Use the file **list-add-new-integration.py**
+:genie: Use the file **list-add-new-integration.py** <br/>
 :fire: Please choose a repository from an SCM (or CR) where there are projects that you can import
 
 ---
