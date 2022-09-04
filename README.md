@@ -22,7 +22,7 @@ The authentication happens in form of a **handshake** which means we have to sen
 or in form of a Python3 code:<br/>
 <img src="resources_img/authentication-pycharm.png" width="600">
 
-## 1. Creating a new organisation using [apiary.io](https://snyk.docs.apiary.io/#reference/organizations/create-organization/create-a-new-organization) 
+## 1.a. Creating a new organisation using [apiary.io](https://snyk.docs.apiary.io/#reference/organizations/create-organization/create-a-new-organization) 
 - [ ] Go to [apiary.io](https://snyk.docs.apiary.io/#reference/organizations/create-organization/create-a-new-organization) and click on "Switch to console"<br/>
 <img src="resources_img/switch-to-console.png" width="600">
 
@@ -37,7 +37,7 @@ or in form of a Python3 code:<br/>
 - [ ] Take a look at the Response box below and try to understand what has happened.
 - [ ] Go to your Snyk WebUI and check if the new organisation is there.   
 
-## 2. Creating a new organisation using the Snyk API
+## 1.b. Creating a new organisation using the Snyk API
 Let's create a new organisation in your Snyk Group using the Snyk API.
 In this case we are going to use a fully featured HTTP client for Python3, called [httpx](https://www.python-httpx.org/). <br/>
 
@@ -50,3 +50,9 @@ As mentioned above, the authentication starts with a TCP-handshake. If we didn't
 
 Normally, we should create a virtual environment at the beginning, set environment variables as secrets (Snyk Tokens, Group IDs, Org. IDs...). 
 Now we we'll use these secrets in a hard-coded way as regular Python variables.
+
+- [ ] After giving values to the **SNYK_TOKEN**, **GROUP_ID** and **NEW_PROJECT_NAME** variables, run the script:
+```python3 create-new-orgs.py```
+
+- [ ] Take a look at the response of the API and try to understand what has happened.
+- [ ] Go to your Snyk WebUI and check if the new organisation is there. 
