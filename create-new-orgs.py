@@ -41,6 +41,7 @@ def main():
     client = create_client(base_url="https://api.snyk.io/api/v1", token=SNYK_TOKEN)
 
     new_org = create_new_org(client, group_id=GROUP_ID, new_project_name=NEW_PROJECT_NAME)
+    logging.debug(json.dumps(new_org, indent=2))
     print(new_org)
 
 
