@@ -29,20 +29,20 @@ Before we can do things with the API, we need to **authenticate** first, because
 
 The authentication happens in form of a **handshake** which means we have to send the following information to the Snyk API first:
 
-<img src="resources_img/authentication-apiary.png" width="600">
+<img src="resources_img/authentication-apiary.png" width="630">
 
 or in form of a Python3 code:<br/>
-<img src="resources_img/authentication-pycharm.png" width="600">
+<img src="resources_img/authentication-pycharm.png" width="630">
 
 ## 2. Creating a new organisation in the Snyk webUI
 <img src="resources_img/first-task.png" width="600">
 
 ### 2.a. Creating a new organisation using [apiary.io](https://snyk.docs.apiary.io/#reference/organizations/create-organization/create-a-new-organization) 
 - [ ] Go to [apiary.io](https://snyk.docs.apiary.io/#reference/organizations/create-organization/create-a-new-organization) and click on "Switch to console"<br/>
-<img src="resources_img/switch-to-console.png" width="600">
+<img src="resources_img/switch-to-console.png" width="630">
 
 - [ ] Now we need to configure the Header-first. For now, we only change the "Authorization" field by adding a valid token to it (replace the text **API_KEY** to a valid **Group-level-token**)<br/>   
-<img src="resources_img/authentication-apiary-auth.png" width="600">
+<img src="resources_img/authentication-apiary-auth.png" width="630">
 
 - [ ] Change the parameters in the Body-section: the name of your new organisation in the Snyk WebUI, your GroupID in the Snyk WebUI, and **optionally** an organisationID from the Snyk WebUI where we can copy the various integrations-settings from.
 
@@ -130,3 +130,6 @@ In my example, I'll create a Gitlab connection, the integration parameters shoul
 ---
 - When getting all the dependencies of a given organisation, we are going to **use different filter attributes**. By doing so, we'll get only the relevant data from the API.      
 - We could require all the information from the API and then retrieve the relevant pieces by filtering, sanitizing, etc. them, but it may cause a huge overhead, costs... It is rarely the best way or solution to move an entire database.
+
+- [ ] Let's take a look at the different filter attributes first!
+<img src="resources_img/dependencies-filter-attributes.png" width="630">
