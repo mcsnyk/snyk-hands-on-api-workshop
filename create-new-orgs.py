@@ -35,9 +35,9 @@ def create_new_org(client: httpx.Client, group_id: str, new_project_name: str, s
 def main():
     """Main function"""
     
-    SNYK_TOKEN = "bf9b9173-fdf6-4d2a-b603-ebc6e6b0f341"
-    GROUP_ID = "40efc063-b5d7-4f2c-932b-13f6f13f4bd9"
-    NEW_PROJECT_NAME = "new-organisation-name"
+    SNYK_TOKEN = "your-snyk-group-level-token-in-the-webui"
+    GROUP_ID = "your-snyk-groupid-in-the-webui"
+    NEW_PROJECT_NAME = "your-new-organisation-name"
 
     client = create_client(base_url="https://api.snyk.io/api/v1", token=SNYK_TOKEN)
 
