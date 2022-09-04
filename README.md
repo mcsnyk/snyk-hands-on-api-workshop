@@ -23,16 +23,30 @@ or in form of a Python3 code:<br/>
 <img src="resources_img/authentication-pycharm.png" width="600">
 
 ## 1. Creating a new organisation using [apiary.io](https://snyk.docs.apiary.io/#reference/organizations/create-organization/create-a-new-organization) 
-- [ ] Go to [apiary.io](https://snyk.docs.apiary.io/#reference/organizations/create-organization/create-a-new-organization) and click on "Switch to console" 
-<img src="resources_img/switch-to-console.png" width="600"><br/>
+- [ ] Go to [apiary.io](https://snyk.docs.apiary.io/#reference/organizations/create-organization/create-a-new-organization) and click on "Switch to console"<br/>
+<img src="resources_img/switch-to-console.png" width="600">
 
-- [ ] Now we need to configure the Header-first. For now, we only change the "Authorization" field by adding a valid token to it (replace the text **API_KEY** to a valid **Group-level-token**<br/>   
+- [ ] Now we need to configure the Header-first. For now, we only change the "Authorization" field by adding a valid token to it (replace the text **API_KEY** to a valid **Group-level-token**)<br/>   
 <img src="resources_img/authentication-apiary-auth.png" width="600">
 
-- [ ] Change the parameters in the Body-section: the name of your new organisation in the Snyk WebUI, your GroupID in the Snyk WebUI, and optionally a organisationID from the Snyk WebUI where we can copy the various integrations-settings.
+- [ ] Change the parameters in the Body-section: the name of your new organisation in the Snyk WebUI, your GroupID in the Snyk WebUI, and **optionally** an organisationID from the Snyk WebUI where we can copy the various integrations-settings from.
 
 - [ ] Click on the green button "Call Resources" <br/>
 <img src="resources_img/authentication-apiary-auth-body.png" width="600">
 
+- [ ] Take a look at the Response box below and try to understand what has happened.
+- [ ] Go to your Snyk WebUI and check if the new organisation is there.   
+
 ## 2. Creating a new organisation using the Snyk API
 Let's create a new organisation in your Snyk Group using the Snyk API.
+In this case we are going to use a fully featured HTTP client for Python3, called [httpx](https://www.python-httpx.org/). <br/>
+
+As mentioned above, the authentication starts with a TCP-handshake. If we didn't use a client (which keeps a connection active and alive), we would have to do this handshake every single time we leverage the various API functions and call the API. A client also allows us to have multiple connections at the same time by reducing overhead operations at a networking level.
+
+- [ ] Please check if Python3 is installed on your machine by running the command (any version above 3.5 should be fine): <br/>
+```python3 --version```
+- [ ] First of all, we need to install the Python libraries needed (requirements.txt) <br/>
+```pip3 install -r requirements.txt``` <br/>
+
+Normally, we should create a virtual environment at the beginning, set environment variables as secrets (Snyk Tokens, Group IDs, Org. IDs...). 
+Now we we'll use these secrets in a hard-coded way as regular Python variables.
