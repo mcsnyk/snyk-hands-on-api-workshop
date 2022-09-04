@@ -93,6 +93,7 @@ for org in group_orgs:
 ## 4. Add a new integration to the org
 ---
 :genie: Use the file **list-add-new-integration.py**
+:fire: Please choose a repository from an SCM (or CR) where there are projects that you can import
 
 ---
 - [ ] First of all, let's check, which are the existing integrations! You can choose an existing Snyk-org with multiple integrations. Give values to the **SNYK_TOKEN** and **ORG_ID** variables!
