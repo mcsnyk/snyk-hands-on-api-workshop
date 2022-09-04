@@ -19,7 +19,7 @@ There are many language-specific Snyk API Clients Libraries available:
 	- [2.a. Creating a new organisation using apiary.io](#2a-creating-a-new-organisation-using-apiaryio)  <br/>
 	- [2.b. Creating a new organisation using httpx and Python](#2b-creating-a-new-organisation-using-httpx-and-python)  <br/>
 - [3. List all organisations within your Snyk Group](#3-list-all-organisations-within-your-snyk-group)  <br/>  
-- [4. Add a new integration to the org](#4-add-a-new-integration-to-the-org)  <br/>
+- [4. Add a new integration to an organisation](#4-add-a-new-integration-to-an-organisation)  <br/>
 
 
 
@@ -98,7 +98,7 @@ for org in group_orgs:
       print(org["id"])
 ```
 
-## 4. Add a new integration to the org
+## 4. Add a new integration to an organisation
 ---
 :genie: Use the file **list-add-new-integration.py** <br/>
 :fire: Please choose a repository from an SCM (or CR) where there are projects that you can import
