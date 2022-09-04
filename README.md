@@ -38,7 +38,7 @@ or in form of a Python3 code:<br/>
 - [ ] Take a look at the Response box below and try to understand what has happened.
 - [ ] Go to your Snyk WebUI and check if the new organisation is there.   
 
-## 1.b. Creating a new organisation using the Snyk API
+## 1.b. Creating a new organisation using httpx and Python
 Let's create a new organisation in your Snyk Group using the Snyk API.
 In this case we are going to use a fully featured HTTP client for Python3, called [httpx](https://www.python-httpx.org/). <br/>
 
