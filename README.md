@@ -131,7 +131,7 @@ In my example, I'll create a Gitlab connection, the integration parameters shoul
 - When getting all the dependencies of a given organisation, we are going to **use different filter attributes**. By doing so, we'll get only the relevant data from the API, it makes it easier for us to identify what we are looking for from reporting.      
 - We could require all the information from the API and then retrieve the relevant pieces by filtering, sanitizing, etc. them, but it may cause a huge overhead, costs... It is rarely the best way or solution to move an entire database.
 
-- [ ] Let's take a look at the different filter attributes first!
+- [ ] Let's take a look at the [different filter attributes](https://snyk.docs.apiary.io/#reference/dependencies/dependencies-by-organization/list-all-dependencies) first!
 <img src="resources_img/dependencies-filter-attributes.png" width="630">
 
 - [ ] Let's create filter attributes! Filter out C and H severity dependencies in Javascript and Terraform files, in a given project! 
