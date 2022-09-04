@@ -145,6 +145,6 @@ In my example, I'll create a Gitlab connection, the integration parameters shoul
     }
 ```
 
-- [ ] **Experiment with the filtering**! Also try to use the sorting and grouping options!
+- [ ] **Experiment with the filtering**! Also try to use the [sorting and grouping options](https://snyk.docs.apiary.io/#reference/dependencies/dependencies-by-organization/list-all-dependencies)!
 <img src="resources_img/dependencies-parameters.png" width="630">
 
