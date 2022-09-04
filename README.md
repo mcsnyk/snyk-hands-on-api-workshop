@@ -92,10 +92,13 @@ for org in group_orgs:
 
 ## 4. Add a new integration to the org
 ---
-:genie: Use the file **add-new-integration.py**
+:genie: Use the file **list-add-new-integration.py**
 
 ---
-- [ ] Let's check first, [what parameters are needed](https://snyk.docs.apiary.io/#reference/integrations/integrations/add-new-integration) to establish a new connection to an SCM or CR. The various integrations require also various parameters to be configured (e.g. username + password, url, token, etc...)
+- [ ] First of all, let's check, which are the existing integrations! You can choose an existing Snyk-org with multiple integrations. Give values to the **SNYK_TOKEN** and **ORG_ID** variables!
+
+Now we are creating a new integration!
+- [ ] Let's check, [what parameters are needed](https://snyk.docs.apiary.io/#reference/integrations/integrations/add-new-integration) to establish a new connection to an SCM or CR. The various integrations require also various parameters to be configured (e.g. username + password, url, token, etc...)
 
 In my example, I'll create a Gitlab connection, the integration parameters should look like this:
 ```
