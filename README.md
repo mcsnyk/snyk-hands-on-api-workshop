@@ -1,4 +1,5 @@
-# Hands-on workshop: Interacting with the Snyk API by using Python-scripts and apiary.io 
+# Hands-on workshop<br/>
+# Interacting with the Snyk API by using Python-scripts and apiary.io 
    
 There are many ways to interact with the Snyk API. 
 We will be using [apiary.io](https://snyk.docs.apiary.io/#reference/organizations/create-organization/create-a-new-organization) and Python-scripts now.
