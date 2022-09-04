@@ -12,8 +12,10 @@ There are many language-specific Snyk API Clients Libraries available:
  		- Ruby [client library](https://github.com/edgar/rsnyk) for Snyk   
   
 - Rotem Miara also held a workshop on how to onboard projects in the Snyk Web-UI.
-     
-## 0. Authentication  
+    
+## 0. Plan for the workshop
+
+## 1. Authentication  
 Before we can do things with the API, we need to **authenticate** first, because the API needs to know who it is interacting with, and what permissions are assigned to us (what we are allowed to do).   
 
 The authentication happens in form of a **handshake** which means we have to send the following information to the Snyk API first:
@@ -23,7 +25,7 @@ The authentication happens in form of a **handshake** which means we have to sen
 or in form of a Python3 code:<br/>
 <img src="resources_img/authentication-pycharm.png" width="600">
 
-## 1.a. Creating a new organisation using [apiary.io](https://snyk.docs.apiary.io/#reference/organizations/create-organization/create-a-new-organization) 
+## 2.a. Creating a new organisation using [apiary.io](https://snyk.docs.apiary.io/#reference/organizations/create-organization/create-a-new-organization) 
 - [ ] Go to [apiary.io](https://snyk.docs.apiary.io/#reference/organizations/create-organization/create-a-new-organization) and click on "Switch to console"<br/>
 <img src="resources_img/switch-to-console.png" width="600">
 
@@ -38,7 +40,7 @@ or in form of a Python3 code:<br/>
 - [ ] Take a look at the Response box below and try to understand what has happened.
 - [ ] Go to your Snyk WebUI and check if the new organisation is there.   
 
-## 1.b. Creating a new organisation using httpx and Python
+## 2.b. Creating a new organisation using httpx and Python
 Let's create a new organisation in your Snyk Group using the Snyk API.
 In this case we are going to use a fully featured HTTP client for Python3, called [httpx](https://www.python-httpx.org/). <br/>
 
