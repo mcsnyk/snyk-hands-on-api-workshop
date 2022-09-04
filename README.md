@@ -23,7 +23,7 @@ or in form of a Python3 code:<br/>
 <img src="resources_img/authentication-pycharm.png" width="600">
 
 ## 1. Creating a new organisation using [apiary.io](https://snyk.docs.apiary.io/#reference/organizations/create-organization/create-a-new-organization) 
-- [ ] Go to <a href="https://snyk.docs.apiary.io/#reference/organizations/create-organization/create-a-new-organization)" target="_blank">apiary.io</a>
+- [ ] Go to <a href="https://snyk.docs.apiary.io/#reference/organizations/create-organization/create-a-new-organization" target="_blank">apiary.io</a>
 
 ## 2. Creating a new organisation using the Snyk API
 Let's create a new organisation in your Snyk Group using the Snyk API.
