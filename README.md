@@ -125,11 +125,26 @@ In my example, I'll create a Gitlab connection, the integration parameters shoul
 
 ## 5. Dependencies of an organization
 ---
-:genie: Use the file **get-all-dependencies-of-an-org.py**
+:genie: Use the file **get-org-dependencies.py**
 
 ---
-- When getting all the dependencies of a given organisation, we are going to **use different filter attributes**. By doing so, we'll get only the relevant data from the API.      
+- When getting all the dependencies of a given organisation, we are going to **use different filter attributes**. By doing so, we'll get only the relevant data from the API, it makes it easier for us to identify what we are looking for from reporting.      
 - We could require all the information from the API and then retrieve the relevant pieces by filtering, sanitizing, etc. them, but it may cause a huge overhead, costs... It is rarely the best way or solution to move an entire database.
 
 - [ ] Let's take a look at the different filter attributes first!
 <img src="resources_img/dependencies-filter-attributes.png" width="630">
+
+- [ ] Let's create filter attributes! Filter out C and H severity dependencies in Javascript and Terraform files, in a given project! 
+```
+    filters = {
+        "filters": {
+            "languages": ["javascript", "terraform"],
+            "projects": ["f5b58850-b885-4690-838c-5b1165f0b21e"],
+            "severity": ["critical", "high"]
+        }
+    }
+```
+
+- [ ] **Experiment with the filtering**! Also try to use the sorting and grouping options!
+<img src="resources_img/dependencies-parameters.png" width="630">
+
