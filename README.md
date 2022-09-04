@@ -25,7 +25,10 @@ The authentication happens in form of a **handshake** which means we have to sen
 or in form of a Python3 code:<br/>
 <img src="resources_img/authentication-pycharm.png" width="600">
 
-## 2.a. Creating a new organisation using [apiary.io](https://snyk.docs.apiary.io/#reference/organizations/create-organization/create-a-new-organization) 
+## 2. Creating a new organisation in the Snyk webUI
+<img src="resources_img/first-task.png" width="600">
+
+### 2.a. Creating a new organisation using [apiary.io](https://snyk.docs.apiary.io/#reference/organizations/create-organization/create-a-new-organization) 
 - [ ] Go to [apiary.io](https://snyk.docs.apiary.io/#reference/organizations/create-organization/create-a-new-organization) and click on "Switch to console"<br/>
 <img src="resources_img/switch-to-console.png" width="600">
 
@@ -40,7 +43,7 @@ or in form of a Python3 code:<br/>
 - [ ] Take a look at the Response box below and try to understand what has happened.
 - [ ] Go to your Snyk WebUI and check if the new organisation is there.   
 
-## 2.b. Creating a new organisation using httpx and Python
+### 2.b. Creating a new organisation using httpx and Python
 Let's create a new organisation in your Snyk Group using the Snyk API.
 In this case we are going to use a fully featured HTTP client for Python3, called [httpx](https://www.python-httpx.org/). <br/>
 
