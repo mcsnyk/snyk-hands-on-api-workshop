@@ -27,8 +27,8 @@ def get_all_orgs_in_a_group(client: httpx.Client, group_id: str) -> httpx.Respon
 
 def main():
     """Main function"""
-    SNYK_TOKEN = "bf9b9173-fdf6-4d2a-b603-ebc6e6b0f341"
-    GROUP_ID = "40efc063-b5d7-4f2c-932b-13f6f13f4bd9"
+    SNYK_TOKEN = "..."
+    GROUP_ID = "..."
 
     client = create_client(base_url="https://api.snyk.io/api/v1", token=SNYK_TOKEN)
 
