@@ -42,11 +42,11 @@ def add_new_integration(client: httpx.Client, org_id: str, integr_type: str,  in
 
 def main():
     """Main function. """
-    SNYK_TOKEN = "bf9b9173-fdf6-4d2a-b603-ebc6e6b0f341"
-    ORG_ID = "b6553a7e-9051-43aa-8bf7-3437e1918e04"
-    INTEGR_TYPE = "gitlab"
-    INTEGR_TOKEN = "glpat-9YciuBMPA3sqSdfuzNRv"
-    URL = "https://gitlab.com"
+    SNYK_TOKEN = "..."
+    ORG_ID = "..."
+    INTEGR_TYPE = "gitlab" #example
+    INTEGR_TOKEN = "..."
+    URL = "https://gitlab.com" #example
 
     client = create_client(base_url="https://api.snyk.io/api/v1", token=SNYK_TOKEN)
 
