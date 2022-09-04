@@ -14,8 +14,11 @@ There are many language-specific Snyk API Clients Libraries available:
 - Rotem Miara also held a workshop on how to onboard projects in the Snyk Web-UI.
     
 ## 0. Plan for the workshop
+- <a href="c1">1. Authentication</a>
+- <a href="c2">2. Creating a new organisation in the Snyk webUI</a>
+- <a href="c21">1. Authentication</a>
 
-## 1. Authentication  
+## 1. <a name="c1">Authentication</a>  
 Before we can do things with the API, we need to **authenticate** first, because the API needs to know who it is interacting with, and what permissions are assigned to us (what we are allowed to do).   
 
 The authentication happens in form of a **handshake** which means we have to send the following information to the Snyk API first:
@@ -25,7 +28,7 @@ The authentication happens in form of a **handshake** which means we have to sen
 or in form of a Python3 code:<br/>
 <img src="resources_img/authentication-pycharm.png" width="600">
 
-## 2. Creating a new organisation in the Snyk webUI
+## <a name="c1">2. Creating a new organisation in the Snyk webUI</a>
 <img src="resources_img/first-task.png" width="600">
 
 ### 2.a. Creating a new organisation using [apiary.io](https://snyk.docs.apiary.io/#reference/organizations/create-organization/create-a-new-organization) 
