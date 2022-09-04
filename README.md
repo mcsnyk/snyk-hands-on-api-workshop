@@ -75,3 +75,18 @@ Now we we'll use these secrets in a hard-coded way as regular Python variables.
 
 ---
 Besides, check if the ID of the newly created organisation is the same, as in 2.a or 2.b
+
+- [ ] Fill in the SNYK_TOKEN, GROUP_ID and name_splinter
+- [ ] Take a look at the results, compare them with what you see [in Apiary!](https://snyk.docs.apiary.io/#reference/groups/list-all-organizations-in-a-group/list-all-organizations-in-a-group)
+
+This way we can filter orgs to e.g. when they were created 
+`the format is like "created": "2022-08-07T16:14:57.231Z")`, etc... 
+- Get the ID's of all in August created orgs:
+```
+splinter = "-08-"
+
+for org in group_orgs:
+   if splinter in org["created"]:
+      print(org["id"])
+```
+
