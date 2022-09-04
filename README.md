@@ -16,6 +16,7 @@ There are many language-specific Snyk API Clients Libraries available:
 ## 0. Plan for the workshop
 - [1. Authentication](#1-authentication)
 - [2. Creating a new organisation in the Snyk webUI](#2-creating-a-new-organisation-in-the-snyk-webui)
+- [2.a. Creating a new organisation using apiary.io](##2a-creating-a-new-organisation-using-apiaryio)
 
 
 ## 1. Authentication  
