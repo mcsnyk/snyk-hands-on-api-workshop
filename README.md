@@ -128,5 +128,5 @@ In my example, I'll create a Gitlab connection, the integration parameters shoul
 :genie: Use the file **get-all-dependencies-of-an-org.py**
 
 ---
-When getting all the dependencies of a given organisation, we are going to **use different filter attributes**.   
-We could require all the information from the API and then retrieve the relevant pieces by filtering, sanitizing, etc. them, but it may cause a huge overhead, costs... It is rarely the best solution to move an entire database.
+- When getting all the dependencies of a given organisation, we are going to **use different filter attributes**. By doing so, we'll get only the relevant data from the API.      
+- We could require all the information from the API and then retrieve the relevant pieces by filtering, sanitizing, etc. them, but it may cause a huge overhead, costs... It is rarely the best way or solution to move an entire database.
