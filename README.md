@@ -90,3 +90,20 @@ for org in group_orgs:
       print(org["id"])
 ```
 
+## 4. Add a new integration to the org
+---
+:genie: Use the file **add-new-integration.py**
+
+---
+- [ ] Let's check first, [what parameters are needed](https://snyk.docs.apiary.io/#reference/integrations/integrations/add-new-integration) to establish a new connection to an SCM or CR. The various integrations require also various parameters to be configured (e.g. username + password, url, token, etc...)
+
+In my example, I'll create a Gitlab connection, the integration parameters should look like this:
+```
+    new_integration_data = {
+        "type": integration_type,
+        "credentials": {
+            "token": integration_token,
+            "url": gitlab_url
+        }
+    }
+``` 
