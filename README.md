@@ -14,8 +14,8 @@ There are many language-specific Snyk API Clients Libraries available:
 - Rotem Miara also held a workshop on how to onboard projects in the Snyk Web-UI.
     
 ## 0. Plan for the workshop
-- [1. Authentication](#1.-Authentication)
-- [2. Creating a new organisation in the Snyk webUI](#2.-Creating-a-new-organisation-in-the-Snyk-webUI)
+- [1. Authentication](#1.-authentication)
+- [2. Creating a new organisation in the Snyk webUI](#2.-creating-a-new-organisation-in-the-snyk-webui)
 
 
 ## 1. Authentication  
