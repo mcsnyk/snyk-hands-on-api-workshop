@@ -20,6 +20,7 @@ There are many language-specific Snyk API Clients Libraries available:
 	- [2.b. Creating a new organisation using httpx and Python](#2b-creating-a-new-organisation-using-httpx-and-python)  <br/>
 - [3. List all organisations within your Snyk Group](#3-list-all-organisations-within-your-snyk-group)  <br/>  
 - [4. Add a new integration to an organisation](#4-add-a-new-integration-to-an-organisation)  <br/>
+- [5. Dependencies of an organization](#5-dependencies-of-an-organization)  <br/>
 
 
 
@@ -119,3 +120,13 @@ In my example, I'll create a Gitlab connection, the integration parameters shoul
         }
     }
 ``` 
+
+**Import a vulnerable application!**
+
+## 5. Dependencies of an organization
+---
+:genie: Use the file **get-all-dependencies-of-an-org.py**
+
+---
+When getting all the dependencies of a given organisation, we are going to **use different filter attributes**.   
+We could require all the information from the API and then retrieve the relevant pieces by filtering, sanitizing, etc. them, but it may cause a huge overhead, costs... It is rarely the best solution to move an entire database.
