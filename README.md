@@ -42,8 +42,13 @@ or in form of a Python3 code:<br/>
 
 - [ ] Take a look at the Response box below and try to understand what has happened.
 - [ ] Go to your Snyk WebUI and check if the new organisation is there.   
+<br/>
 
 ### 2.b. Creating a new organisation using httpx and Python
+---
+:genie: Use the file **create-new-orgs.py**
+
+---
 Let's create a new organisation in your Snyk Group using the Snyk API.
 In this case we are going to use a fully featured HTTP client for Python3, called [httpx](https://www.python-httpx.org/). <br/>
 
@@ -62,3 +67,11 @@ Now we we'll use these secrets in a hard-coded way as regular Python variables.
 
 - [ ] Take a look at the response of the API and try to understand what has happened.
 - [ ] Go to your Snyk WebUI and check if the new organisation is there. 
+<br/>
+
+## 3. List all organisations within your Snyk Group
+---
+:genie: Use the file **get-all-orgs-in-group.py**
+
+---
+Besides, check if the ID of the newly created organisation is the same, as in 2.a or 2.b
