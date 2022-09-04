@@ -1,7 +1,8 @@
 # Hands-on workshop: Interacting with the Snyk API by using Python-scripts and apiary.io 
    
 There are many ways to interact with the Snyk API. 
-We will be using [apiary.io](https://snyk.docs.apiary.io/#reference/organizations/create-organization/create-a-new-organization) and Python-scripts now.   
+We will be using [apiary.io](https://snyk.docs.apiary.io/#reference/organizations/create-organization/create-a-new-organization) and Python-scripts now.
+   
 - Seb Roth held a [workshop](https://github.com/mcsnyk/Seb-snyk-api-workshop) on how to interact with the pysnyk API Client (Small Hands, Windsor 2022).   
 There are many language-specific Snyk API Clients Libraries available:   
  		- Python [client library](https://github.com/snyk-labs/pysnyk) for Snyk  
