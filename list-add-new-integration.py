@@ -47,9 +47,11 @@ def main():
     INTEGR_TYPE = "gitlab" #example
     INTEGR_TOKEN = "..."
     URL = "https://gitlab.com" #example
-
+    
+    # creating a client:
     client = create_client(base_url="https://api.snyk.io/api/v1", token=SNYK_TOKEN)
-
+    
+    # list all the existing integrations for an org:
     list_integrations = list_existing_integrations(client, org_id=ORG_ID)
     print(json.dumps(list_integrations, indent=2))
 
