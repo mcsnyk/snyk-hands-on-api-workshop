@@ -29,6 +29,7 @@ def main():
     """Main function"""
     SNYK_TOKEN = "..."
     GROUP_ID = "..."
+    filter_splinter = "-08-" # example
 
     client = create_client(base_url="https://api.snyk.io/api/v1", token=SNYK_TOKEN)
 
@@ -40,9 +41,9 @@ def main():
     group_orgs = group_orgs_detailed.get("orgs")
 
     # Narrowing down the results:
-    print("--" * 16, "\n ID of the newly created org in the Group:", "\n", "--"*16)
+    print("--" * 16, "\n ID(s) of the orgs by applying the filter-splinter:", "\n", "--"*16)
     for org in group_orgs:
-        if "........" in org["name"]:
+        if filter_splinter in org["created"]:
             print(org["id"])
 
 
