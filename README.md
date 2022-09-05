@@ -11,7 +11,7 @@ There are many language-specific Snyk API Clients Libraries available:
  		- PHP [client library](https://github.com/navikt/snyk-api-php-client) for Snyk   
  		- Ruby [client library](https://github.com/edgar/rsnyk) for Snyk   
   
-- Rotem Miara also held a workshop on how to onboard projects in the Snyk Web-UI.
+- Rotem Miara also held a [workshop](https://docs.google.com/document/d/1Ux2-DSLSnBaS33OrAXyYzwNkwOkpkh0Sr8l4tTHyXgU/edit) on how to onboard projects in the Snyk Web-UI.
     
 ## 0. Plan for the workshop
 - [1. Authentication](#1-authentication)<br/>
