@@ -21,7 +21,7 @@ There are many language-specific Snyk API Clients Libraries available:
 - [3. List all organisations within your Snyk Group](#3-list-all-organisations-within-your-snyk-group)  <br/>  
 - [4. Add a new integration to an organisation](#4-add-a-new-integration-to-an-organisation)  <br/>
 - [5. Dependencies of an organization](#5-dependencies-of-an-organization)  <br/>
-- [6. List the used Open Source licences in a project of an organization](#6-list-the-used-open-source-licences-in-a-project-of-an-organisation)  <br/>
+- [6. List the used Open Source licences in a project of an organization](#6-list-the-used-open-source-licences-in-a-project-of-an-organization)  <br/>
 
 
 
