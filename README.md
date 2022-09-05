@@ -22,17 +22,18 @@ There are many language-specific Snyk API Clients Libraries available:
 - [4. Add a new integration to an organisation](#4-add-a-new-integration-to-an-organisation)  <br/>
 - [5. Dependencies of an organization](#5-dependencies-of-an-organization)  <br/>
 - [6. List the used Open Source licences in a project of an organization](#6-list-the-used-open-source-licences-in-a-project-of-an-organization)  <br/>
+- [7. The reporting-API](https://github.com/mcsnyk/snyk-hands-on-api-workshop/blob/main/README.md#7-the-reporting-api)
 
 
 
 ## 1. Authentication  
-Before we can do things with the API, we need to **authenticate** first, because the API needs to know who it is interacting with, and what permissions are assigned to us (what we are allowed to do).   
+Before we can do things with the API, we need to **authenticate** first, because the API needs to know who it is interacting with, and what permissions are assigned to us (what we are allowed to do).
 
-The authentication happens in form of a **handshake** which means we have to send the following information to the Snyk API first:
+The authentication happens in form of a **handshake** which means we have to send the following information to the Snyk API first.
 
 <img src="resources_img/authentication-apiary.png" width="630">
 
-or in form of a Python3 code:<br/>
+or in form of a Python3 code, where we'll use an httpx client:<br/>
 <img src="resources_img/authentication-pycharm.png" width="630">
 
 ## 2. Creating a new organisation in the Snyk webUI
@@ -154,6 +155,7 @@ In my example, I'll create a Gitlab connection, the integration parameters shoul
 :genie: Use the file **get-licences.py**
 
 ---
+In this chapter we'll see, how we can retrieve Open Source licences from orgs or projects [via the Snyk API](https://snyk.docs.apiary.io/#reference/licenses/licenses-by-organization/list-all-licenses).
 Let's use an organisation this time where there are at least 2 Open Source projects!
 
 - [ ] List all the Open Source licences used by some projects of a given org!
