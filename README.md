@@ -157,4 +157,4 @@ In my example, I'll create a Gitlab connection, the integration parameters shoul
 Let's use an organisation this time where there are at least 2 Open Source projects!
 
 - [ ] List all the Open Source licences used by some projects of a given org!
-- [ ] Coose one with multiple licences and assign the string to the variable __chosen_double_license__! Run the second part of the script and observe the **severity** of that license!  
+- [ ] Choose one with multiple licences and assign the string to the variable __chosen_double_license__! Run the second part of the script and observe the **severity** of that license!  
