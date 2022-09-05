@@ -158,3 +158,17 @@ Let's use an organisation this time where there are at least 2 Open Source proje
 
 - [ ] List all the Open Source licences used by some projects of a given org!
 - [ ] Choose one with multiple licences and assign the string to the variable __chosen_double_license__! Run the second part of the script and observe the **severity** of that license!  
+
+## 7. The reporting-API
+---
+:genie: Use the file **reporting-latest-issues.py**
+
+---
+Now we will take a look at how the [reporting API](https://snyk.docs.apiary.io/#reference/reporting-api/latest-issues/get-list-of-latest-issues) works.
+- [ ] Let's try to list all the 
+- **H** and **C** severity
+- **vulnerabilities** ("vulns"),
+- where the exploit maturity **"mature"** or **"proof-of-concept"** is, 
+- the priority score **between 312 and 876** lies, 
+- **not ignored** (== active) issues, 
+- apply it **for a given project** (you can choose one) 
