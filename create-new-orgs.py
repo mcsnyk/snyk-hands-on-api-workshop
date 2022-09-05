@@ -33,18 +33,22 @@ def create_new_org(client: httpx.Client, group_id: str, new_project_name: str, s
 
 def main():
     """Main function"""
+    
     SNYK_TOKEN = "..."
     GROUP_ID = "..."
     NEW_PROJECT_NAME = "..."
-
+    
+    # creating a client:
     client = create_client(base_url="https://api.snyk.io/api/v1", token=SNYK_TOKEN)
-
+    
+    # creating our new org:
     new_org = create_new_org(client, group_id=GROUP_ID, new_project_name=NEW_PROJECT_NAME)
+    
+    # print out the logs:
     print("--"*16, "\n Logging information:", "\n", "--"*16)
     logging.debug(json.dumps(new_org, indent=2))
-
-    print("--"*16, "\n API response:\n", "--"*16, "\n", json.dumps(new_org, indent=3), "\n")
-
+    
+    # check the ID of the newly created org:
     new_org_id = new_org.get('id')
     print("New org ID: ", new_org_id)
 
