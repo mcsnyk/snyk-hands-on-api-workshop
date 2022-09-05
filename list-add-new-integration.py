@@ -45,7 +45,7 @@ def main():
     SNYK_TOKEN = "..."
     ORG_ID = "..."
     INTEGR_TYPE = "gitlab" #example
-    INTEGR_TOKEN = "..." #if you don't want to bother (valid until 7th Sep., Gitlab:): glpat-9YciuBMPA3sqSdfuzNRv
+    INTEGR_TOKEN = "..." #if you don't want to bother (valid until 7th Sep., Gitlab:): glpat-Q6W69UPuVFhs4qzvJiiF
     URL = "https://gitlab.com" #example
     
     # creating a client:
