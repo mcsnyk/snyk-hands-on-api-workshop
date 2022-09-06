@@ -34,7 +34,7 @@ The authentication happens in form of a **handshake** which means we have to sen
 
 <img src="resources_img/authentication-apiary.png" width="630">
 
-or in form of a Python3 code, where we'll use an httpx client:<br/>
+or in form of a Python3 code, where we'll use an httpx client, we need to authenticate first: ```snyk auth``` <br/><br/>
 <img src="resources_img/authentication-pycharm.png" width="630">
 
 ## 2. Creating a new organisation in the Snyk webUI
