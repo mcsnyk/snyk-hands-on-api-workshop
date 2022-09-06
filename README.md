@@ -182,15 +182,22 @@ Let's use an organisation this time where there are at least 2 Open Source proje
 
 ## 8. The reporting-API
 ---
-:genie: Use the file **reporting-latest-issues.py**
+:genie: Use the files **reporting-latest-issues.py** and **get-issue-counts.py**
 
 ---
+### Reporting the latest issues:
+Returns issues currently in existence. This data can take up to 9 hours to refresh.   
+
 Now we will take a look at how the [reporting API](https://snyk.docs.apiary.io/#reference/reporting-api/latest-issues/get-list-of-latest-issues) works.
-- [ ] Let's try to list all the 
-- **set the orgID!**
-- **C** severity
-- **vulnerabilities** ("vulns"),
-- where the exploit maturity **"mature"** or **"proof-of-concept"** is, 
-- the priority score **between 312 and 876** lies, 
-- **not ignored** (== active) issues, 
-- apply it **for a given project** (you can choose one) 
+
+Let's try to list all the 
+- [ ] **:fire: set the orgID** (required parameter) :fire:
+- [ ] **C** severity
+- [ ] **vulnerabilities** ("vulns"),
+- [ ] where the exploit maturity **"mature"** or **"proof-of-concept"** is, 
+- [ ] the priority score **between 312 and 876** lies, 
+- [ ] **not ignored** (== active) issues, 
+- [ ] apply it **for a given project** (you can choose one) 
+
+### Latest issue counts:
+Returns the number of issues currently in existence. This data can take up to 9 hours to refresh.
