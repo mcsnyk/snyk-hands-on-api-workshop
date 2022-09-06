@@ -20,9 +20,10 @@ There are many language-specific Snyk API Clients Libraries available:
 	- [2.b. Creating a new organisation using httpx and Python](#2b-creating-a-new-organisation-using-httpx-and-python)  <br/>
 - [3. List all organisations within your Snyk Group](#3-list-all-organisations-within-your-snyk-group)  <br/>  
 - [4. Add a new integration to an organisation](#4-add-a-new-integration-to-an-organisation)  <br/>
-- [5. Dependencies of an organization](#5-dependencies-of-an-organization)  <br/>
-- [6. List the used Open Source licences in a project of an organization](#6-list-the-used-open-source-licences-in-a-project-of-an-organization)  <br/>
-- [7. The reporting-API](https://github.com/mcsnyk/snyk-hands-on-api-workshop/blob/main/README.md#7-the-reporting-api)
+- [5. Moving projects to different organisations](#5-moving-projects-to different-organisations)
+- [6. Dependencies of an organization](#6-dependencies-of-an-organization)  <br/>
+- [7. List the used Open Source licences in a project of an organization](#7-list-the-used-open-source-licences-in-a-project-of-an-organization)  <br/>
+- [8. The reporting-API](#8-the-reporting-api)
 
 
 
@@ -125,7 +126,20 @@ In my example, I'll create a Gitlab connection, the integration parameters shoul
 
 **Import a vulnerable application!**
 
-## 5. Dependencies of an organization
+## 5. Moving projects to different organisations
+---
+:genie: Use the file **move-projects.py** <br/>
+
+---
+- [ ] Choose a project (e.g. a Terraform file, a manifest file, etc.) that we well move to one of your existing orgs!
+- [ ] In the file **move-projects.py** set the prijectID of the file, the source orgID and the target orgID!
+
+- [ ] Choose a project (e.g. a Terraform file, a manifest file, etc.) that we well move to one of your existing orgs!
+
+Note: both organisations (origin and target) must have integrations to the same SCM, CR...
+
+
+## 6. Dependencies of an organization
 ---
 :genie: Use the file **get-org-dependencies.py**
 
@@ -150,7 +164,8 @@ In my example, I'll create a Gitlab connection, the integration parameters shoul
 - [ ] **Experiment with the filtering**! Also try to use the [sorting and grouping options](https://snyk.docs.apiary.io/#reference/dependencies/dependencies-by-organization/list-all-dependencies)!
 <img src="resources_img/dependencies-parameters.png" width="630">
 
-## 6. List the used Open Source licences in a project of an organization
+
+## 7. List the used Open Source licences in a project of an organization
 ---
 :genie: Use the file **get-licences.py**
 
@@ -161,7 +176,7 @@ Let's use an organisation this time where there are at least 2 Open Source proje
 - [ ] List all the Open Source licences used by some projects of a given org!
 - [ ] Choose one with multiple licences and assign the string to the variable __chosen_double_license__! Run the second part of the script and observe the **severity** of that license!  
 
-## 7. The reporting-API
+## 8. The reporting-API
 ---
 :genie: Use the file **reporting-latest-issues.py**
 
