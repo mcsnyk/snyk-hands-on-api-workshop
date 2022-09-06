@@ -38,9 +38,7 @@ def get_latest_issues(client: httpx.Client, org_ids: list[str]) -> httpx.Respons
                 "vuln"
             ],
             "ignored": False,
-            "projects": [
-                "116ac265-a00c-43d1-8a9e-9f46964660e5"
-            ],
+            "projects": ["..."],
         }
     }
     response = client.post(f"/reporting/counts/issues?from=2020-08-01&to=2020-08-03&groupBy=severity", data=json.dumps(filters))
@@ -50,8 +48,8 @@ def get_latest_issues(client: httpx.Client, org_ids: list[str]) -> httpx.Respons
 def main():
     """Main function."""
 
-    SNYK_TOKEN = "bf9b9173-fdf6-4d2a-b603-ebc6e6b0f341"
-    ORG_IDS = ["3ee0d99d-1651-4b78-b9a4-a2658bd1815e"]
+    SNYK_TOKEN = "..."
+    ORG_IDS = ["..."]
 
     client = create_client(base_url="https://api.snyk.io/api/v1", token=SNYK_TOKEN)
 
