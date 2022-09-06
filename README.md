@@ -137,7 +137,7 @@ Let's see first, [what parameters are needed](https://snyk.docs.apiary.io/#refer
 - [ ] In the file **move-projects.py** set the prijectID of the file, the source orgID and the target orgID!
 
 - [ ] Choose a project (e.g. a Terraform file, a manifest file, etc.) that we well move to one of your existing orgs!
-
+     
 Note: 
 - both organisations (origin and target) must have integrations to the same SCM, CR...
 - in the Python script we used a PUT command instead of a POST, GET or DELETE...    
