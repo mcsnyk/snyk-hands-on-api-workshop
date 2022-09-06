@@ -187,7 +187,8 @@ Let's use an organisation this time where there are at least 2 Open Source proje
 ---
 Now we will take a look at how the [reporting API](https://snyk.docs.apiary.io/#reference/reporting-api/latest-issues/get-list-of-latest-issues) works.
 - [ ] Let's try to list all the 
-- **H** and **C** severity
+- **set the orgID!**
+- **C** severity
 - **vulnerabilities** ("vulns"),
 - where the exploit maturity **"mature"** or **"proof-of-concept"** is, 
 - the priority score **between 312 and 876** lies, 
