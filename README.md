@@ -13,7 +13,7 @@ There are many language-specific Snyk API Clients Libraries available:
   
 - Rotem Miara also held a [workshop](https://docs.google.com/document/d/1Ux2-DSLSnBaS33OrAXyYzwNkwOkpkh0Sr8l4tTHyXgU/edit) on how to onboard projects in the Snyk Web-UI.
     
-## 0. Plan for the workshop
+## Plan for the workshop
 - [1. Authentication](#1-authentication)<br/>
 - [2. Creating a new organisation in the Snyk webUI](#2-creating-a-new-organisation-in-the-snyk-webui)<br/>
 	- [2.a. Creating a new organisation using apiary.io](#2a-creating-a-new-organisation-using-apiaryio)  <br/>
@@ -25,7 +25,9 @@ There are many language-specific Snyk API Clients Libraries available:
 - [7. List the used Open Source licences in a project of an organization](#7-list-the-used-open-source-licences-in-a-project-of-an-organization)  <br/>
 - [8. The reporting-API](#8-the-reporting-api)  <br/>
 
-
+## Preamble
+- [ ] Clone this repo to your machine by using ```git clone <https...>```
+- [ ] You can execute a Python3 file by using ```python3 <name of the file.py>```
 
 ## 1. Authentication  
 Before we can do things with the API, we need to **authenticate** first, because the API needs to know who it is interacting with, and what permissions are assigned to us (what we are allowed to do).
