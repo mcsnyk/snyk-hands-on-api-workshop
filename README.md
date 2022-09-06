@@ -20,10 +20,10 @@ There are many language-specific Snyk API Clients Libraries available:
 	- [2.b. Creating a new organisation using httpx and Python](#2b-creating-a-new-organisation-using-httpx-and-python)  <br/>
 - [3. List all organisations within your Snyk Group](#3-list-all-organisations-within-your-snyk-group)  <br/>  
 - [4. Add a new integration to an organisation](#4-add-a-new-integration-to-an-organisation)  <br/>
-- [5. Moving projects to different organisations](#5-moving-projects-to different-organisations)
+- [5. Moving projects to different organisations](#5-moving-projects-to-different-organisations)  <br/>
 - [6. Dependencies of an organization](#6-dependencies-of-an-organization)  <br/>
 - [7. List the used Open Source licences in a project of an organization](#7-list-the-used-open-source-licences-in-a-project-of-an-organization)  <br/>
-- [8. The reporting-API](#8-the-reporting-api)
+- [8. The reporting-API](#8-the-reporting-api)  <br/>
 
 
 
