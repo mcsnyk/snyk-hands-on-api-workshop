@@ -131,12 +131,16 @@ In my example, I'll create a Gitlab connection, the integration parameters shoul
 :genie: Use the file **move-projects.py** <br/>
 
 ---
+Let's see first, [what parameters are needed](https://snyk.docs.apiary.io/#reference/projects/move-project/move-project-to-a-different-organization) in order to move a project from one org into another.   
+
 - [ ] Choose a project (e.g. a Terraform file, a manifest file, etc.) that we well move to one of your existing orgs!
 - [ ] In the file **move-projects.py** set the prijectID of the file, the source orgID and the target orgID!
 
 - [ ] Choose a project (e.g. a Terraform file, a manifest file, etc.) that we well move to one of your existing orgs!
 
-Note: both organisations (origin and target) must have integrations to the same SCM, CR...
+Note: 
+- both organisations (origin and target) must have integrations to the same SCM, CR...
+- in the Python script we used a PUT command instead of a POST, GET or DELETE...    
 
 
 ## 6. Dependencies of an organization
