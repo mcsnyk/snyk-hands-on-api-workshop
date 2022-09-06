@@ -26,7 +26,7 @@ There are many language-specific Snyk API Clients Libraries available:
 - [8. The reporting-API](#8-the-reporting-api)  <br/>
 
 ## Preamble
-- [ ] Clone this repo to your machine by using ```git clone <https...>```
+- [ ] Clone this repo into a folder on your machine by using ```git clone https://github.com/mcsnyk/snyk-hands-on-api-workshop.git```
 - [ ] You can execute a Python3 file by using ```python3 <name of the file.py>```
 
 ## 1. Authentication  
