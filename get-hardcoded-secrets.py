@@ -22,7 +22,7 @@ def create_client(base_url: str, token: str) -> httpx.Client:
 
 
 def get_hardcoded(client: httpx.Client, org_id: str) -> httpx.Response:
-    """Creating a new org"""
+    """Getting hardcoded secrets."""
 
     get_hardcoded_sec = {
         "filters": {
